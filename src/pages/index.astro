@@ -1,0 +1,552 @@
+---
+import Layout from "../layouts/Layout.astro";
+import heroImage1 from "../assets/1.jpg";
+import heroImage2 from "../assets/2.jpg";
+import heroImage3 from "../assets/3.jpg";
+import heroImage4 from "../assets/4.jpg";
+import info1Image from "../assets/info1image.png";
+import info2Image from "../assets/info2image.jpg";
+import trustImage from "../assets/trustimage.png";
+---
+
+<Layout title="VioletVision">
+  <div class="absolute top-0 left-0 h-screen w-screen -z-10">
+    <svg version="1.1" viewBox="0 0 800 450"
+      ><defs
+        ><filter
+          id="bbblurry-filter"
+          x="-100%"
+          y="-100%"
+          width="400%"
+          height="400%"
+          filterUnits="objectBoundingBox"
+          primitiveUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feGaussianBlur
+            stdDeviation="40"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            in="SourceGraphic"
+            edgeMode="none"
+            result="blur"></feGaussianBlur></filter
+        ></defs
+      ><g filter="url(#bbblurry-filter)"
+        ><ellipse
+          rx="150"
+          ry="150"
+          cx="828.7406893643466"
+          cy="177.05527288263494"
+          fill="#442244"></ellipse><ellipse
+          rx="150"
+          ry="150"
+          cx="-25.87494451349437"
+          cy="33.814882451837704"
+          fill="#442244"></ellipse></g
+      ></svg
+    >
+  </div>
+  <main class="z-50 bg-transparent py-6 px-10 md:px-40">
+    <!-- HEADER -->
+    <header class="flex items-center relative">
+      <span class="text-white text-lg md:text-2xl">VioletVision</span>
+      <button
+        id="hamburger"
+        class="md:hidden text-white absolute right-0 text-xl"
+      >
+        ☰
+      </button>
+      <ul class="hidden md:flex gap-4 text-slate-300 mt-2 ml-20" id="menu">
+        <li><a href="/about" class="hover:text-white">About</a></li>
+        <li><a href="/blog" class="hover:text-white">Blog</a></li>
+        <li><a href="/contact" class="hover:text-white">Contact</a></li>
+        <div class="absolute top-0 right-0 text-slate-300">
+          <span class="cursor-pointer hover:text-white">Login</span>
+          <button
+            class="cursor-pointer rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 hover:shadow-md transition-shadow hover:shadow-black/50"
+          >
+            <div
+              class="flex items-center justify-center bg-neutral-950 back rounded-lg"
+            >
+              <h1 class="text-white px-2 py-1">Create account</h1>
+            </div>
+          </button>
+        </div>
+      </ul>
+    </header>
+
+    <section class="mt-24 w-auto justify-center items-center flex flex-col">
+      <div
+        class="bg-zinc-900 w-full md:w-[24rem] rounded-2xl py-1 px-4 md:px-0 flex items-center"
+      >
+        <span
+          class="text-white w-14 bg-gradient-to-r from-violet-600 to-orange-400 px-2 rounded-2xl py-1 font-semibold"
+          >New</span
+        >
+        <span
+          class="text-slate-300 font-semibold px-4 text-[0.8rem] md:text-[0.8rem]"
+          >Unleash your creative potential with AI Photo 🎉</span
+        >
+      </div>
+      <h1
+        class="text-6xl text-white w-full md:w-[43rem] text-center font-bold mt-10 px-4 md:px-0"
+      >
+        Elevate Your Business with Our <span
+          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
+          >AI Photo</span
+        >
+      </h1>
+      <h2
+        class="text-slate-300 mt-10 text-center md:text-left text-2xl px-4 md:px-0"
+      >
+        Create Your Product Background
+      </h2>
+      <button
+        class="bg-indigo-400 hover:bg-indigo-500 text-xl font-semibold text-white px-4 py-2 rounded-xl mt-10 flex items-center gap-2"
+      >
+        <svg
+          viewBox="0 0 72 72"
+          id="emoji"
+          class="w-12 h-12 -ml-1"
+          fill="#000000"
+          ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+            <g id="line-supplement">
+              <rect
+                x="33.6248"
+                y="20.0448"
+                width="4.6535"
+                height="32.1987"
+                transform="rotate(44.93 35.952 36.144)"></rect>
+            </g>
+            <g id="color">
+              <rect
+                x="33.6248"
+                y="20.0448"
+                width="4.6535"
+                height="32.1987"
+                transform="rotate(44.93 35.952 36.144)"
+                fill="#ffffff"></rect>
+              <circle cx="47.5749" cy="10.9583" r="2" fill="#ffffff"></circle>
+              <circle cx="56" cy="28.3101" r="2" fill="#ffffff"></circle>
+            </g>
+            <g id="line">
+              <rect
+                x="34.2628"
+                y="9.2771"
+                rx="0.4398"
+                width="3.3851"
+                height="53.5249"
+                transform="rotate(44.93 35.955 36.04)"
+                fill="none"
+                stroke="#ffffff"
+                stroke-miterlimit="10"
+                stroke-width="2"></rect>
+              <line
+                x1="45.3062"
+                x2="47.6346"
+                y1="23.8732"
+                y2="26.0854"
+                fill="none"
+                stroke="#ffffff"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="23.4413"
+                x2="25.8379"
+                y1="46.1937"
+                y2="48.5844"
+                fill="none"
+                stroke="#ffffff"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="47.5749"
+                x2="47.5749"
+                y1="8.9583"
+                y2="7.2929"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="47.5749"
+                x2="47.5749"
+                y1="14.6237"
+                y2="12.9583"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="45.5749"
+                x2="43.9096"
+                y1="10.9583"
+                y2="10.9583"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="51.2403"
+                x2="49.5749"
+                y1="10.9583"
+                y2="10.9583"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="56"
+                x2="56"
+                y1="26.3101"
+                y2="24.6447"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="56"
+                x2="56"
+                y1="31.9755"
+                y2="30.3101"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="54"
+                x2="52.3346"
+                y1="28.3101"
+                y2="28.3101"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+              <line
+                x1="59.6654"
+                x2="58"
+                y1="28.3101"
+                y2="28.3101"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="2"></line>
+            </g>
+          </g></svg
+        >
+        <span>Start Free Trial Now!</span>
+      </button>
+      <div
+        class="flex gap-4 w-full mt-20 px-4 md:px-0 xl:px-36 grid grid-cols-1 md:grid-cols-4"
+      >
+        <div
+          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
+        >
+          <img
+            src={heroImage1.src}
+            class="w-full h-full absolute top-0 left-0"
+          />
+          <div
+            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
+          >
+            <span class="text-white font-semibold">Lorem ipsum</span>
+            <span class="text-white text-[0.8rem]"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              ullam, placeat tempore</span
+            >
+          </div>
+        </div>
+        <div
+          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
+        >
+          <img
+            src={heroImage2.src}
+            class="w-full h-full absolute top-0 left-0"
+          />
+          <div
+            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
+          >
+            <span class="text-white font-semibold">Lorem ipsum</span>
+            <span class="text-white text-[0.8rem]"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              ullam, placeat tempore</span
+            >
+          </div>
+        </div>
+        <div
+          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
+        >
+          <img
+            src={heroImage3.src}
+            class="w-full h-full absolute top-0 left-0"
+          />
+          <div
+            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
+          >
+            <span class="text-white font-semibold">Lorem ipsum</span>
+            <span class="text-white text-[0.8rem]"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              ullam, placeat tempore</span
+            >
+          </div>
+        </div>
+        <div
+          class="w-full max-w-96 h-60 rounded-lg overflow-hidden relative shadow-lg transition-transform transform hover:scale-105 mb-4"
+        >
+          <img
+            src={heroImage4.src}
+            class="w-full h-full absolute top-0 left-0"
+          />
+          <div
+            class="bg-black/50 backdrop-blur-lg w-full h-20 z-10 absolute bottom-0 px-5 py-2 flex flex-col"
+          >
+            <span class="text-white font-semibold">Lorem ipsum</span>
+            <span class="text-white text-[0.8rem]"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              ullam, placeat tempore</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="mt-10 md:mt-24 w-auto justify-center items-center flex flex-col"
+    >
+      <h3
+        class="text-4xl text-white w-full md:w-[43rem] text-center font-semibold mt-10 mb-10 px-4 md:px-0"
+      >
+        <span
+          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
+          >How</span
+        > it works?
+      </h3>
+      <div
+        class="flex flex-col md:flex-row w-full md:px-60 justify-center items-center"
+      >
+        <div
+          class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"
+        >
+          <div
+            class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"
+          >
+            <span
+              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"
+              >Step 1</span
+            >
+            <span class="text-white text-2xl mt-3">1. Upload your image</span>
+            <span class="text-slate-300 text-[0.8rem] mt-3"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              ullam, placeat tempore</span
+            >
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"
+        >
+          <div
+            class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"
+          >
+            <span
+              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"
+              >Step 2</span
+            >
+            <span class="text-white text-2xl mt-3">2. Select item</span>
+            <span class="text-slate-300 text-[0.8rem] mt-3"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              ullam, placeat tempore</span
+            >
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-gradient-to-r from-violet-950 via-zinc-700 to-yellow-900 p-0.5 ml-5 w-full md:w-[24rem] h-auto mb-4 md:mb-0"
+        >
+          <div
+            class="bg-neutral-950 text-slate-300 rounded-lg w-full h-full px-6 py-6 flex flex-col"
+          >
+            <span
+              class="bg-zinc-900 hover:bg-slate-800 px-2 py-1 rounded-md text-slate-400 font-semibold w-16 text-center"
+              >Step 3</span
+            >
+            <span class="text-white text-2xl mt-3">3. Download your image</span>
+            <span class="text-slate-300 text-[0.8rem] mt-3"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              ullam, placeat tempore</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-auto justify-center items-center flex flex-col md:flex-row mt-10 md:mt-36 px-4 md:px-0"
+    >
+      <img
+        src={info1Image.src}
+        class="h-auto md:w-96 w-full rounded-xl mb-4 md:mb-0"
+      />
+      <div
+        class="w-full md:w-[28rem] mx-auto md:mx-0 md:ml-20 text-center md:text-left"
+      >
+        <span class="text-white text-2xl md:text-3xl font-semibold">
+          Make your products pop with <span
+            class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
+            >AI-powered features</span
+          >
+        </span>
+        <p class="text-slate-300 text-[0.7rem] mt-4">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          modi sed nihil iusto cupiditate nesciunt laudantium itaque dolore
+          corporis repellat molestias harum nostrum cum, natus consequatur. Modi
+          molestiae maiores corporis.
+        </p>
+        <button
+          class="bg-indigo-400 hover:bg-indigo-500 text-xl font-semibold text-white px-16 py-2 rounded-lg mt-10 w-full md:w-auto justify-center flex items-center gap-2"
+        >
+          Explore AI Tools
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="w-auto justify-center items-center flex flex-col md:flex-row mt-10 md:mt-36 px-4 md:px-0"
+    >
+      <div
+        class="w-full md:w-[28rem] mx-auto md:mx-0 md:mr-20 text-center md:text-left mb-4 md:mb-0"
+      >
+        <span class="text-white text-3xl font-semibold text-center">
+          Instant <span
+            class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
+            >Object Removal</span
+          > for Stunning Images with AI
+        </span>
+        <p class="text-slate-300 text-[0.7rem] mt-4">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          modi sed nihil iusto cupiditate nesciunt laudantium itaque dolore
+          corporis repellat molestias harum nostrum cum, natus consequatur. Modi
+          molestiae maiores corporis.
+        </p>
+        <button
+          class="bg-indigo-400 hover:bg-indigo-500 text-xl font-semibold text-white px-16 py-2 rounded-lg mt-10 w-full md:w-auto justify-center flex items-center gap-2"
+        >
+          Explore AI Tools
+        </button>
+      </div>
+      <img src={info2Image.src} class="h-auto md:w-96 w-full rounded-xl" />
+    </section>
+
+    <section
+      class="w-auto justify-center items-center flex flex-col mt-20 px-4 md:px-0"
+    >
+      <h3
+        class="text-3xl md:text-4xl text-white w-full md:w-[43rem] text-center font-semibold mt-10 mb-10"
+      >
+        <span
+          class="bg-gradient-to-r from-violet-600 to-orange-400 text-transparent bg-clip-text"
+          >Trusted by <span class="text-white">2M+</span> users</span
+        >
+      </h3>
+      <img src={trustImage.src} class="w-full md:w-auto" />
+    </section>
+
+    <section class="w-auto justify-center items-center flex mt-20 px-4 md:px-0">
+      <div class="text-slate-300 grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div class="flex flex-col mb-4 md:mb-0">
+          <span class="text-white text-2xl">VioletVision</span>
+          <span class="text-sm mt-4"
+            >Specialing in AI-enhanced fashion photography and e-commerce
+            solutions.</span
+          >
+          <div class="flex py-5 gap-2">
+            <svg
+              class="text-slate-300"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              ><path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                fill="#dedbdb"></path></svg
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              ><path
+                d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"
+                fill="#dedbdb"></path></svg
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              ><path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                fill="#dedbdb"></path></svg
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              ><path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
+                fill="#dedbdb"></path></svg
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              ><path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"
+                fill="#dedbdb"></path></svg
+            >
+          </div>
+        </div>
+        <div class="flex flex-col pl-4 md:pl-20 mb-4 md:mb-0">
+          <span class="text-lg text-white font-semibold">Products</span>
+          <span class="text-sm mt-3">AI Fashion Models</span>
+          <span class="text-sm mt-2">Online Background Changer</span>
+          <span class="text-sm mt-2">AI Background for Models</span>
+          <span class="text-sm mt-2">Snap Clothing Recolor</span>
+          <span class="text-sm mt-2">AI Background for Products</span>
+          <span class="text-sm mt-2">Free Background Remover</span>
+        </div>
+        <div class="flex flex-col pl-4 md:pl-20 mb-4 md:mb-0">
+          <span class="text-lg text-white font-semibold">Change Background</span
+          >
+          <span class="text-sm mt-3">White Background</span>
+          <span class="text-sm mt-2">Gold Background</span>
+          <span class="text-sm mt-2">Light Blue Background</span>
+          <span class="text-sm mt-2">Transparent Background</span>
+        </div>
+        <div class="flex flex-col pl-4 md:pl-20 mb-4 md:mb-0">
+          <span class="text-lg text-white font-semibold">Company</span>
+          <span class="text-sm mt-3">Privacy Policy</span>
+          <span class="text-sm mt-2">Terms & Conditions</span>
+        </div>
+        <div class="flex flex-col pl-4 md:pl-20">
+          <span class="text-lg text-white font-semibold">Support</span>
+          <span class="text-sm mt-3">About us</span>
+          <span class="text-sm mt-2">Contact us</span>
+          <span class="text-sm mt-2">Blog</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
